@@ -4,7 +4,7 @@
   group: name={{deploy_group}}
 
 - name: Make sure the deploy user are present
-  user: name={{deploy_user}} system=yes
+  user: name={{deploy_user}} home={{deploy_user_home|default(omit)}} system=yes
 
 - name: Ensure deploy dirs exists
   file: path={{item}} state=directory mode=0755 owner={{deploy_user}} group={{deploy_group}}

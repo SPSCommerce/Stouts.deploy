@@ -18,3 +18,4 @@ deploy_src_dir: "{{deploy_dir}}/src"          # Source's directory
 deploy_bin_dir: "{{deploy_dir}}/bin"          # Directory where placed scripts
 
 deploy_dir_skip: ["{{deploy_src_dir}}", "{{deploy_bin_dir}}"]       # Dont create this dirs, only keep variables
+#deploy_user_home: "{{deploy_dir}}"
